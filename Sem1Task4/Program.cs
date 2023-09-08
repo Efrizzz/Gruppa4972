@@ -19,7 +19,7 @@ if (numC > max)
 {
     max = numC;
 }
-Console.WriteLine("Максимальное число " + max);
+Console.WriteLine("Максимальное число: " + max);
 
 
 

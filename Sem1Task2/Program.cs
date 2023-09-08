@@ -16,6 +16,6 @@ if (numA > numB)
 else
 {
     Console.WriteLine("Большее число " + numB);
-    Console.WriteLine("Меньшее число " + numA); 
+    Console.WriteLine("Меньшее число " + numA);
 }
 
