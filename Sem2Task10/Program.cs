@@ -3,8 +3,8 @@
 
 Console.Write("Введи трёхзначное число: ");
 string stringNum = Console.ReadLine()??"0";
-int num = Convert.ToInt32(stringNum);
 Console.WriteLine("вторая цифра этого числа: "+stringNum[1]);
+
 
 
 
