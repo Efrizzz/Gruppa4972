@@ -3,6 +3,18 @@
 //  и проверяет, является ли этот день выходным.
 
 
+// int day = int.Parse(Console.ReadLine() ?? "0");
+// if (day > 7 || day < 1){
+//     Console.WriteLine("Число " + day + " не является днем недели, введите число от 1 до 7! ");   
+// }
+// else{
+//     if (day > 5){
+//         Console.WriteLine(day + " - день недели является выходным");
+//     }
+// else{
+//     Console.WriteLine(day + " - день недели является рабочим");
+// }
+// }
 Console.WriteLine("Введите день недели");
 string day = Console.ReadLine()??"0";
 
