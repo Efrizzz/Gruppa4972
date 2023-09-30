@@ -19,7 +19,7 @@ if (ValidateLines(lineData1, lineData2))
 {
     double[] coord = FindCoords (lineData1, lineData2);
     Console.Write($"Точка пересечения уравнений y={lineData1[Coefficient]}*x+{lineData1[Constant]} и y={lineData2[Coefficient]}*x+{lineData2[Constant]}");
-    Console.WriteLine($"Имеет координаты ({coord[X]},{coord[Y]})");
+    Console.WriteLine($" Имеет координаты ({coord[X]},{coord[Y]})");
 }
 
 //Вводим данные
@@ -27,7 +27,7 @@ double ReadData(string msg)
 
 {
     Console.WriteLine(msg); //вывести сообщение
-    string value = (Console.ReadLine() ?? "0"); //считывает с консоли строку
+    string value = Console.ReadLine() ?? "0"; //считывает с консоли строку
     double result = Convert.ToDouble(value); //преобразует строку в целое число
     return result; // возвращает результат
 }
@@ -45,7 +45,7 @@ double[] FindCoords(double[] lineData1, double[] lineData2)
 {
     double[] coord = new double[2];
     coord[X] = (lineData1[Constant] - lineData2[Constant]) / (lineData2[Coefficient] - lineData1[Coefficient]);
-    coord[Y] = (lineData1[Constant] * coord[X] + lineData1[Constant]);
+    coord[Y] = lineData1[Constant] * coord[X] + lineData1[Constant];
     return coord;
 }
 
