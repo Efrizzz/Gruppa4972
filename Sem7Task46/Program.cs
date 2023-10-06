@@ -70,5 +70,7 @@ int column = ReadData("Введите количество столбцов: ");
 
 int[,] arr2D = Fill2DArray(row,column,100,10);
 Print2DArray(arr2D);
+Console.WriteLine();
 Print2DArrayColor(arr2D);
+
 
